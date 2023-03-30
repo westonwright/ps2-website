@@ -10,9 +10,10 @@ export default class BaseScene
         this.clearColor = clearColor;
         this.clearAlpha = clearAlpha;
         this.sizes = {
-            witdh: 0,
+            width: 0,
             height: 0
         };
+        
         this.updateSizes(sizes);
 
         this.scene = new THREE.Scene();
