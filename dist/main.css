@@ -1,0 +1,102 @@
+html,
+body
+{
+    /*
+    height: 100vh;
+    */
+    font-family: Arial;
+    background: rgb(24, 24, 24);
+    overscroll-behavior: none;
+    user-select: none;
+}
+
+.webgl
+{
+    position: fixed;
+    min-width: 25vh;
+    min-height: 25vw;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.dataParent
+{
+    /*
+    overflow: auto;
+    width: 100vw;
+    overflow: hidden;
+    border: solid yellow;
+    */
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    font-size: 5vh;
+    max-height: 22vh;
+    min-height: 22vh;
+}
+
+.dataDirectoryContainer
+{
+    /*
+    border: solid red;
+    */
+    overflow: hidden;
+}
+
+.dataDescriptionContainer
+{
+    /*
+    border: solid red;
+    */
+    overflow: hidden;
+}
+
+.dataDirectory
+{
+    word-wrap: normal;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-color: black;
+    text-align: left;
+}
+
+.dataDescription
+{
+    /*
+    position: relative;
+    border: solid blue;
+    */
+    word-wrap: normal;
+    font-weight: 600;
+    color: yellow;
+    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-color: black;
+    text-align: right;
+}
+
+@media screen and (max-width: 50vh) {
+    .dataParent
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+
+    .dataDirectory
+    {
+        text-align: center;
+    }
+
+    .dataDescription
+    {
+        text-align: center;
+    }
+}
+
+
+
+/*# sourceMappingURL=main.css.map*/
